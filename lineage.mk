@@ -13,7 +13,7 @@ $(call inherit-product, device/lge/geehrc/full_geehrc.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := geehrc
-PRODUCT_NAME := nitrogen_geehrc
+PRODUCT_NAME := lineage_geehrc
 PRODUCT_BRAND := LGE
 PRODUCT_MODEL := Optimus G
 PRODUCT_MANUFACTURER := LGE
