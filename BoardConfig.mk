@@ -32,8 +32,11 @@ TARGET_HAS_LEGACY_CAMERA_HAL1 := true
 BOARD_GLOBAL_CFLAGS += -DMETADATA_CAMERA_SOURCE
 TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
 
+# Fix sensors
+TARGET_NEEDS_GCC_LIBC := true
+
 # Inline kernel
-KERNEL_TOOLCHAIN_PREFIX:=$(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-
+KERNEL_TOOLCHAIN_PREFIX := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-
 TARGET_KERNEL_CONFIG := gee_defconfig	
 TARGET_KERNEL_SOURCE := kernel/lge/geehrc
 
@@ -78,7 +81,7 @@ USE_OPENGL_RENDERER := true
 TARGET_USES_ION := true
 TARGET_USES_OVERLAY := true
 TARGET_USES_SF_BYPASS := true
-TARGET_USES_C2D_COMPOSITON := true
+TARGET_USES_C2D_COMPOSITION := true
 
 #Use AOSP browser
 TARGET_USES_AOSP_BROWSER := true
